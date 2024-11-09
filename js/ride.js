@@ -46,7 +46,7 @@ WildRydes.map = WildRydes.map || {};
         pronoun = rider.Gender === 'Male' ? 'his' : 'her';
         displayUpdate(rider.Name + ', your ' + rider.Color + ' rider, is on ' + pronoun + ' way.');
         animateArrival(function animateCallback() {
-            displayUpdate(rider.Name + ' has arrived. Giddy up!');
+            displayUpdate(rider.Name + ' has arrived. Start your journey!');
             WildRydes.map.unsetLocation();
             $('#request').prop('disabled', 'disabled');
             $('#request').text('Set Pickup');
